@@ -86,7 +86,7 @@
                     <button class="btn btn-outline-danger" id="boton">P&aacute;gina oficial de la
                         Universidad</button>
                     <button class="btn btn-outline-warning" id="n">Ir a Prematricula</button>
-                    <button class="btn btn-outline-primary" id="n">Noticias UNAN-Leon</button>
+                    <button class="btn btn-outline-primary" id="f">Noticias UNAN-Leon</button>
                 </div>
                 <div style="margin-top: 15px;">
                     <p>
@@ -103,12 +103,16 @@
     <script>
         var e = document.getElementById('boton');
         var n = document.getElementById('n');
+        var f = document.getElementById('f');
         e.addEventListener('click', () => {
             window.location = 'https://unanleon.edu.ni/'
         });
         n.addEventListener('click', () => {
             window.location = 'https://admision.unanleon.edu.ni/admision'
         });
+        f.addEventListener('click', () =>{
+            window.location = 'https://noticias.unanleon.edu.ni'
+        })
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
