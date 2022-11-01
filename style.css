@@ -2,7 +2,8 @@
 
     .padre,
     .contenedor-i,
-    .contenedor-d {
+    .contenedor-d,
+    .aux {
         flex-direction: column;
         justify-content: center;
         height: 100%;
@@ -13,7 +14,14 @@
     .contenedor-d {
         height: 13%;
         text-align: center !important;
-        margin-top: 95px;
+        margin-top: 125px;
+        margin-bottom: 25px;
+    }
+
+    .aux{
+        margin-top: 60px;
+        height: 13%;
+        text-align: center !important;
     }
 
     /* .note {
@@ -52,7 +60,10 @@
 }
 @media screen and (max-width:562px) {
     .contenedor-d{
-        margin-top: 105px !important;
+        margin-top: 125px !important;
+    }
+    .aux{
+        margin-top: 70px !important;
     }
 }
 
@@ -60,5 +71,8 @@
     .contenedor-d {
         margin-top: 130px !important;
         text-align: center;
+    }
+    .aux{
+        margin-top: 80px !important;
     }
 }
