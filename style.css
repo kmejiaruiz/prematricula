@@ -65,6 +65,9 @@
     .aux{
         margin-top: 70px !important;
     }
+    .contenedor-alerta{
+        margin: 15px;
+    }
 }
 
 @media screen and (max-width:315px) {

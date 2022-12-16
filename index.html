@@ -1,103 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prematriculas 2023 Abiertas</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./spinner.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
 
-</head>
+  <body>
+    <div id="progreso">
+      <div class="loading">
+        <div class="image-loader">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png"
+            width="75px"
+            height="85px"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <p class="loader-titulo">Cargando...</p>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-<body>
     <style type="text/css">
-        /* Removidas las clases de css antiguas para dar una nueva cara a esta pagina que lamentablemente cayo en el olvido. */
+      /* Removidas las clases de css antiguas para dar una nueva cara a esta pagina que lamentablemente cayo en el olvido. */
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        body {
-            background-color: #000;
-            color: #fff;
-        }
+      body {
+        background-color: #000;
+        color: #fff;
+      }
 
-        .padre {
-            display: flex;
-            height: 100vh;
-        }
+      .padre {
+        display: flex;
+        height: 100vh;
+      }
 
-        .contenedor-i {
-            display: flex;
-            /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png/427px-Logo_Blanco_UNAN_Le%C3%B3n.png'); */
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png');
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: 200px;
-            justify-content: center;
-            align-items: center;
-            background-position: center;
-            /* background-size: cover; */
-        }
+      .contenedor-i {
+        display: flex;
+        /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png/427px-Logo_Blanco_UNAN_Le%C3%B3n.png'); */
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 200px;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        /* background-size: cover; */
+      }
 
-        /* .contenedor-i .auxiliar{
+      /* .contenedor-i .auxiliar{
             display: flex;
             
         } */
 
-        .contenedor-d,
-        .aux {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            padding: 20px;
-        }
+      .contenedor-d,
+      .aux {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+      }
 
-        .intermedio {
-            width: 2px;
-            background: #000000;
-            background: linear-gradient(180deg, #020024 0%, #e60b0b 30%, #cfd70d 50%, #0b38bc 70%, #000000 100%);
-        }
+      .intermedio {
+        width: 2px;
+        background: #000000;
+        background: linear-gradient(
+          180deg,
+          #020024 0%,
+          #e60b0b 30%,
+          #cfd70d 50%,
+          #0b38bc 70%,
+          #000000 100%
+        );
+      }
 
-        .deepshadow {
-            font-family: Helvetica, sans-serif;
-            /* font-weight: normal; */
-            font-size: 30px;
-        }
+      .deepshadow {
+        font-family: Helvetica, sans-serif;
+        /* font-weight: normal; */
+        font-size: 30px;
+      }
 
-        .note {
-            margin-top: 15px;
-        }
+      .note {
+        margin-top: 15px;
+      }
     </style>
 
     <div class="padre">
-        <div class="contenedor-i"></div>
-        <div class="intermedio"></div>
-        <div class="contenedor-d">
-            <div class="top">
-                <div class="w-auto crt">
-                    <h2 class='deepshadow'>Prematriculas cerradas.</h2>
-                </div>
-                <div id="div-boton" class="mt-3" style="display: flex; gap: 15px;">
-                    <button class="btn btn-outline-danger" id="boton">P&aacute;gina oficial de la
-                        Universidad</button>
-                    <button class="btn btn-outline-warning n" disabled id="n">Ir a Prematricula</button>
-                    <button class="btn btn-outline-primary" id="f">Noticias UNAN-Leon</button>
-                </div>
-                <div class="pie" style="margin-top: 15px;">
-                    <p class="legend">
-                        Las prematriculas abriran en:
-                    </p> 
-                    <div class="alert alert-success" style="cursor: wait;" role="alert">
-                        <section class="container">
-                            <!-- <h1>Las prematriculas abribran en :</h1> -->
-                            <div class="countdown" style="display: flex; gap: 10px; align-items: center; justify-content: center;">
-                                <!-- <div>
+      <div class="contenedor-i"></div>
+      <div class="intermedio"></div>
+      <div class="contenedor-d">
+        <div class="top">
+          <div class="w-auto crt">
+            <h2 class="deepshadow">Prematrículas abiertas.</h2>
+          </div>
+          <div id="div-boton" class="mt-3" style="display: flex; gap: 15px">
+            <button class="btn btn-outline-danger" id="boton">
+              P&aacute;gina oficial de la Universidad
+            </button>
+            <button class="btn btn-outline-warning n" disabled id="n">
+              Ir a Prematrícula
+            </button>
+            <button class="btn btn-outline-primary" id="f">
+              Noticias UNAN-León
+            </button>
+          </div>
+          <div class="pie" style="margin-top: 15px">
+            <p class="legend">Las prematrículas cerraran en:</p>
+            <div class="contenedor-alerta">
+              <div
+                class="alert alert-danger w-auto"
+                style="cursor: wait"
+                role="alert"
+              >
+                <section class="container">
+                  <!-- <h1>Las prematriculas abribran en :</h1> -->
+                  <div
+                    class="countdown"
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <!-- <div>
                                 <p id="days">132</p>
                                 <span>Dias</span>
                             </div>
@@ -114,17 +163,20 @@
                                 <span>Segundos</span>
                             </div>
                         </div> -->
-                                
-                                <span id="hours"></span>
-                                <span>Horas</span>
-                                <span id="minutes"></span>
-                                <span>Minutos</span>
-                                <span id="seconds"></span>
-                                <span>Segundos</span>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- <section class="container" style="margin-top: 15px;">
+
+                    <span id="days"></span>
+                    <span>Dias</span>
+                    <span id="hours"></span>
+                    <span>Hrs</span>
+                    <span id="minutes"></span>
+                    <span>Min</span>
+                    <span id="seconds"></span>
+                    <span>Seg</span>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- <section class="container" style="margin-top: 15px;">
                     <h1>Las prematriculas abribran en :</h1>
                     <div class="countdown" style="display: flex; gap: 10px;">
                         <div>
@@ -154,29 +206,40 @@
                 <span id="seconds"></span>
                 <p>Segundos</p>
                 </section> -->
-                    <!-- <p style="font-family: Helvetica, sans-serif; font-weight: normal; font-size: 8px;">"A la Libertad por la Universidad"</p> -->
-                </div>
-            </div>
+            <!-- <p style="font-family: Helvetica, sans-serif; font-weight: normal; font-size: 8px;">"A la Libertad por la Universidad"</p> -->
+          </div>
         </div>
-        <script src="./index.js"></script>
-        <script>
-            var e = document.getElementById('boton');
-            var n = document.getElementById('n');
-            var f = document.getElementById('f');
-            e.addEventListener('click', () => {
-                window.location = 'https://unanleon.edu.ni/'
-            });
-            n.addEventListener('click', () => {
-                window.location = 'https://admision.unanleon.edu.ni/admision'
-            });
-            f.addEventListener('click', () => {
-                window.location = 'https://noticias.unanleon.edu.ni'
-            });
-
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous"></script>
-</body>
-
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.2.min.js"
+      integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(window).on("load", function () {
+        $("#progreso").fadeOut("slow");
+      });
+    </script>
+    <script src="./index.js"></script>
+    <script>
+      var e = document.getElementById("boton");
+      var n = document.getElementById("n");
+      var f = document.getElementById("f");
+      e.addEventListener("click", () => {
+        window.location = "https://unanleon.edu.ni/";
+      });
+      n.addEventListener("click", () => {
+        window.location = "https://admision.unanleon.edu.ni/admision";
+      });
+      f.addEventListener("click", () => {
+        window.location = "https://noticias.unanleon.edu.ni";
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
