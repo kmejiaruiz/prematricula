@@ -1,3 +1,7 @@
+// New
+
+
+
 const $days = document.getElementById("days"),
   $hours = document.getElementById("hours"),
   $minutes = document.getElementById("minutes"),
