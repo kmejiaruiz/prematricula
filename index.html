@@ -127,11 +127,14 @@
               Noticias UNAN-León
             </button>
           </div>
+          <!-- div contenedor de alerta -->
           <div class="pie" style="margin-top: 15px">
-            <p class="legend">Las prematrículas cerraran en:</p>
+            <p class="legend">
+              Las prematrículas de carreras que <strong>APLICAN</strong> prueba cerraran en:
+            </p>
             <div class="contenedor-alerta">
               <div
-                class="alert alert-danger w-auto"
+                class="alert alert-danger w-auto alerta1"
                 style="cursor: wait"
                 role="alert"
               >
@@ -146,24 +149,6 @@
                       justify-content: center;
                     "
                   >
-                    <!-- <div>
-                                <p id="days">132</p>
-                                <span>Dias</span>
-                            </div>
-                            <div>
-                                <p id="hours">15</p>
-                                <span>Horas</span>
-                            </div>
-                            <div>
-                                <p id="minutes">25</p>
-                                <span>Minutos</span>
-                            </div>
-                            <div>
-                                <p id="seconds">45</p>
-                                <span>Segundos</span>
-                            </div>
-                        </div> -->
-
                     <span id="days"></span>
                     <span>Dias</span>
                     <span id="hours"></span>
@@ -175,38 +160,39 @@
                   </div>
                 </section>
               </div>
-            </div>
-            <!-- <section class="container" style="margin-top: 15px;">
-                    <h1>Las prematriculas abribran en :</h1>
-                    <div class="countdown" style="display: flex; gap: 10px;">
-                        <div>
-                            <p id="days">132</p>
-                            <span>Dias</span>
-                        </div>
-                        <div>
-                            <p id="hours">15</p>
-                            <span>Horas</span>
-                        </div>
-                        <div>
-                            <p id="minutes">25</p>
-                            <span>Minutos</span>
-                        </div>
-                        <div>
-                            <p id="seconds">45</p>
-                            <span>Segundos</span>
-                        </div>
-                    </div>
+              <p class="legend">
+                Las prematrículas de carreras que <strong>NO APLICAN</strong>
+                prueba cerraran en:
+              </p>
+              <div
+                class="alert alert-warning w-auto"
+                style="cursor: wait"
+                role="alert"
+              >
+                <section class="container">
+                  <!-- <h1>Las prematriculas abribran en :</h1> -->
 
-                <span id="days"></span>
-                <p>Dias</p>
-                <span id="hours"></span>
-                <p>Horas</p>
-                <span id="minutes"></span>
-                <p>Minutos</p>
-                <span id="seconds"></span>
-                <p>Segundos</p>
-                </section> -->
-            <!-- <p style="font-family: Helvetica, sans-serif; font-weight: normal; font-size: 8px;">"A la Libertad por la Universidad"</p> -->
+                  <div
+                    class="countdown"
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <span id="dias"></span>
+                    <span>Dias</span>
+                    <span id="horas"></span>
+                    <span>Hrs</span>
+                    <span id="minutos"></span>
+                    <span>Min</span>
+                    <span id="segundos"></span>
+                    <span>Seg</span>
+                  </div>
+                </section>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +207,8 @@
         $("#progreso").fadeOut("slow");
       });
     </script>
-    <script src="./index.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
     <script>
       var e = document.getElementById("boton");
       var n = document.getElementById("n");

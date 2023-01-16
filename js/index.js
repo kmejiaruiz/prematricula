@@ -16,7 +16,7 @@ b.disabled = false;
 //Fecha a futuro
 // const countdownDate = new Date('11 01, 2022 8:00 AM').getTime();
 // Nueva instacia que prevee una fecha futura a cambiar el estado de la interfaz
-const countdownDate = new Date("01 21, 2023 12:00 pm").getTime();
+const countdownDate = new Date("01 17, 2023 12:00 am").getTime();
 
 let interval = setInterval(function () {
   //Obtener fecha actual y milisegundos
@@ -46,10 +46,11 @@ let interval = setInterval(function () {
     $seconds.innerHTML = 0;
     // p.innerHTML = `<p class="legend">Las prematriculas cerraran en: </p>`
     // $finalMessage.style.transform = 'translateY(0)';
-    document.title = "Prematriculas 2023 Cerradas.";
-    div.innerHTML = `<h2 class='deepshadow'>Prematrículas cerradas.</h2>`;
-    b.textContent = "Resultados de Admisión 2023";
-    document.querySelector(".pie").innerHTML = `<div class = "disappear">
+    // document.title = "Prematriculas 2023 Cerradas.";
+    // div.innerHTML = `<h2 class='deepshadow'>Prematrículas cerradas.</h2>`;
+    // b.textContent = "Resultados de Admisión 2023";
+    // b.disabled = true;
+    document.querySelector(".alerta1").innerHTML = `<div class = "disappear">
     <!-- 
     ** Haz cada cosa en la vida como si fuera lo último que hagas. **   - Marco Aurelio 
     -->
