@@ -1,81 +1,95 @@
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
+  .padre,
+  .contenedor-i,
+  .contenedor-d,
+  .aux {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 !important;
+    /* background-size: 300px !important; */
+  }
+  .top {
+    margin-top: 45%;
+  }
+  .contenedor-d {
+    height: 13%;
+    text-align: center !important;
+    margin-top: 125px;
+    margin-bottom: 25px;
+  }
 
-    .padre,
-    .contenedor-i,
-    .contenedor-d,
-    .aux {
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        padding: 0 !important;
-        /* background-size: 300px !important; */
-    }
+  .aux {
+    margin-top: 60px;
+    height: 13%;
+    text-align: center !important;
+  }
 
-    .contenedor-d {
-        height: 13%;
-        text-align: center !important;
-        margin-top: 125px;
-        margin-bottom: 25px;
-    }
-
-    .aux{
-        margin-top: 60px;
-        height: 13%;
-        text-align: center !important;
-    }
-
-    /* .note {
+  /* .note {
         text-align: center !important;
         padding: 10px; 
     } */
 
-    .contenedor-i {
-        background-size: 75px !important;
-        height: 105px !important;
-    }
+  .contenedor-i {
+    background-size: 75px !important;
+    height: 105px !important;
+  }
 
-    #div-boton {
-        display: flex;
-        justify-content: center !important;
-        align-items: center !important;
-        flex-direction: column !important;
-        /* width: 100%; */
-        margin-top: 15px;
-        /* margin-bottom: 15px; */
-    }
+  #div-boton {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    /* width: 100%; */
+    margin-top: 15px;
+    /* margin-bottom: 15px; */
+  }
 
-    .intermedio {
-        flex-direction: column;
-        height: 1px;
-        width: 100% !important;
-        background: rgb(0, 0, 0);
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(230, 11, 11, 1) 30%, rgba(207, 215, 13, 1) 50%, rgba(11, 56, 188, 1) 70%, rgba(0, 0, 0, 1) 100%) !important;
-    }
+  .intermedio {
+    flex-direction: column;
+    height: 1px;
+    width: 100% !important;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(230, 11, 11, 1) 30%,
+      rgba(207, 215, 13, 1) 50%,
+      rgba(11, 56, 188, 1) 70%,
+      rgba(0, 0, 0, 1) 100%
+    ) !important;
+  }
 
-    /* .top {
+  /* .top {
         margin-top: 165px !important;
 
     } */
-    
 }
-@media screen and (max-width:562px) {
-    .contenedor-d{
-        margin-top: 125px !important;
-    }
-    .aux{
-        margin-top: 70px !important;
-    }
-    .contenedor-alerta{
-        margin: 15px;
-    }
+@media screen and (max-width: 562px) {
+  .contenedor-d {
+    margin-top: 125px !important;
+  }
+  .aux {
+    margin-top: 70px !important;
+  }
+  .contenedor-alerta {
+    margin: 15px;
+  }
+  .top{
+    margin-top: 70% !important;
+    
+  }
 }
 
-@media screen and (max-width:315px) {
-    .contenedor-d {
-        margin-top: 130px !important;
-        text-align: center;
-    }
-    .aux{
-        margin-top: 80px !important;
-    }
+@media screen and (max-width: 315px) {
+  .contenedor-d {
+    margin-top: 130px !important;
+    text-align: center;
+  }
+  .aux {
+    margin-top: 80px !important;
+  }
+  .top{
+    margin-top: 70% !important;
+  }
 }
