@@ -44,7 +44,7 @@ let intervalo = setInterval(() => {
         ** Haz cada cosa en la vida como si fuera lo último que hagas. **   - Marco Aurelio 
         -->
         <p class = legend style="margin:0px; text-align:center;">
-            Resultados de admisión disponibles en febrero 16, 2023 <br>
+            Resultados de admisión disponibles en febrero 17, 2023 a las 10 A.M <br>
             ¡A la Libertad por la Universidad! 
         </p>
         </div>`;
