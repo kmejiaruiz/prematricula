@@ -35,17 +35,16 @@ let intervalo = setInterval(() => {
         $segundos.innerHTML = 0;
         // p.innerHTML = `<p class="legend">Las prematriculas cerraran en: </p>`
         // $finalMessage.style.transform = 'translateY(0)';
-        document.title = "2023 Juntos Vamos Adelante.";
+        document.title = "2023 Juntos Vamos Adelante - Prematriculas Cerradas.";
         div.innerHTML = `<h2 class='deepshadow'>Prematrículas cerradas.</h2>`;
         b.textContent = "Resultados de Admisión 2023";
         // b.disabled = true;
-        document.querySelector(".pie").innerHTML = `<div class = "text alert alert-primary">
+        document.querySelector(".pie").innerHTML = `<div class = "text alert alert-danger">
         <!-- 
         ** Haz cada cosa en la vida como si fuera lo último que hagas. **   - Marco Aurelio 
         -->
         <p class = legend style="margin:0px; text-align:center;">
-            Resultados de admisión disponibles en febrero 17, 2023 a las 10 A.M <br>
-            ¡A la Libertad por la Universidad! 
+            El proceso de matriculas y prematriculas ha culminado. Gracias por su participaci&oacute;n.
         </p>
         </div>`;
         document.querySelector(".contenedor-d").classList.add("aux");

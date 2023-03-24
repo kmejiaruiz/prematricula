@@ -10,7 +10,7 @@
     /* background-size: 300px !important; */
   }
   .top {
-    margin-top: 45%;
+    margin-top: auto;
   }
   .contenedor-d {
     height: 13%;
@@ -60,10 +60,9 @@
     ) !important;
   }
 
-  /* .top {
-        margin-top: 165px !important;
-
-    } */
+  .top {
+    margin-top: 165px !important;
+  }
 }
 @media screen and (max-width: 562px) {
   .contenedor-d {
@@ -75,9 +74,8 @@
   .contenedor-alerta {
     margin: 15px;
   }
-  .top{
-    margin-top: 70% !important;
-    
+  .top {
+    /* margin-top: 70% !important; */
   }
 }
 
@@ -87,9 +85,9 @@
     text-align: center;
   }
   .aux {
-    margin-top: 80px !important;
+    /* margin-top: 80px !important; */
   }
-  .top{
-    margin-top: 70% !important;
+  .top {
+    /* margin-top: 70% !important; */
   }
 }

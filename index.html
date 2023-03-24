@@ -207,6 +207,10 @@
       $(window).on("load", function () {
         $("#progreso").fadeOut("slow");
       });
+      setTimeout(() => {
+        $(".aux").addClass("mt-0");
+        $(".pie").fadeOut("slow");
+      }, 10000);
     </script>
     <script src="./js/script.js"></script>
     <script src="./js/index.js"></script>
