@@ -200,9 +200,11 @@
         </div>
       </div>
     </div>
-    <nav class="navbar fixed-bottom bg-transparent text-md-end text-center">
-      <div class="container-fluid ">
-        <span class="w-100" style="font-size: .8rem"
+    <nav
+      class="navbar fixed-bottom bg-transparent text-md-end text-center footer d-none"
+    >
+      <div class="container-fluid">
+        <span class="w-100" style="font-size: 0.8rem"
           >211 A&ntilde;os de Fundaci&oacute;n <br />
           A la Libertad por la Universidad!</span
         >
@@ -218,8 +220,11 @@
         $("#progreso").fadeOut("slow");
       });
       setTimeout(() => {
-        $(".aux").addClass("mt-0");
         $(".pie").fadeOut("slow");
+        $(".aux").addClass("mt-0");
+        $(".footer").fadeIn("slow", () => {
+          $('.footer').removeClass("d-none");
+        });
       }, 10000);
     </script>
     <script src="./js/script.js"></script>
