@@ -20,8 +20,8 @@
       <div class="loading">
         <div class="image-loader">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png"
-            width="75px"
+            src="https://noticias.unanleon.edu.ni/wp-content/uploads/2021/11/ESCUDO-BLANCO-UNAN.png"
+            width="85px"
             height="85px"
             alt=""
             srcset=""
@@ -60,8 +60,8 @@
 
       .contenedor-i {
         display: flex;
-        /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png/427px-Logo_Blanco_UNAN_Le%C3%B3n.png'); */
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_Blanco_UNAN_Le%C3%B3n.png");
+
+        background-image: url("https://noticias.unanleon.edu.ni/wp-content/uploads/2021/11/ESCUDO-BLANCO-UNAN.png");
         width: 100%;
         background-repeat: no-repeat;
         background-size: 200px;
@@ -121,10 +121,12 @@
               P&aacute;gina oficial de la Universidad
             </button>
             <button class="btn btn-outline-warning n" disabled id="n">
-              Ir a Prematrícula
+              <a href="https://inscripcioncomponentes.unanleon.edu.ni" target=""
+                >Ir a Prematrícula</a
+              >
             </button>
             <button class="btn btn-outline-primary" id="f">
-              Noticias UNAN-León
+              Matricula En Linea
             </button>
           </div>
           <!-- div contenedor de alerta -->
@@ -198,6 +200,14 @@
         </div>
       </div>
     </div>
+    <nav class="navbar fixed-bottom bg-transparent text-md-end text-center">
+      <div class="container-fluid ">
+        <span class="w-100" style="font-size: .8rem"
+          >211 A&ntilde;os de Fundaci&oacute;n <br />
+          A la Libertad por la Universidad!</span
+        >
+      </div>
+    </nav>
     <script
       src="https://code.jquery.com/jquery-3.6.2.min.js"
       integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
@@ -219,13 +229,25 @@
       var n = document.getElementById("n");
       var f = document.getElementById("f");
       e.addEventListener("click", () => {
-        window.location = "https://unanleon.edu.ni/";
+        window.open(
+          "https://unanleon.edu.ni",
+          "Pagina de Inicio::UNAN-LEON",
+          "width=650, height=500, left=400, top=50"
+        );
       });
       n.addEventListener("click", () => {
-        window.location = "https://admision.unanleon.edu.ni/admision";
+        window.open(
+          "https://inscripcioncomponentes.unanleon.edu.ni",
+          "Pagina de Inicio::UNAN-LEON",
+          "width=650, height=500, left=400, top=50"
+        );
       });
       f.addEventListener("click", () => {
-        window.location = "https://noticias.unanleon.edu.ni";
+        window.open(
+          "https://matricula.unanleon.edu.ni",
+          "Pagina de Inicio::UNAN-LEON",
+          "width=650, height=500, left=400, top=50"
+        );
       });
     </script>
     <script

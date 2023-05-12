@@ -31,7 +31,7 @@
     } */
 
   .contenedor-i {
-    background-size: 75px !important;
+    background-size: 100px !important;
     height: 105px !important;
   }
 
@@ -63,6 +63,7 @@
   .top {
     margin-top: 165px !important;
   }
+  
 }
 @media screen and (max-width: 562px) {
   .contenedor-d {
@@ -74,20 +75,11 @@
   .contenedor-alerta {
     margin: 15px;
   }
-  .top {
-    /* margin-top: 70% !important; */
-  }
 }
 
 @media screen and (max-width: 315px) {
   .contenedor-d {
     margin-top: 130px !important;
     text-align: center;
-  }
-  .aux {
-    /* margin-top: 80px !important; */
-  }
-  .top {
-    /* margin-top: 70% !important; */
   }
 }

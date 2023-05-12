@@ -37,7 +37,7 @@ let intervalo = setInterval(() => {
         // $finalMessage.style.transform = 'translateY(0)';
         document.title = "2023 Juntos Vamos Adelante - Prematriculas Cerradas.";
         div.innerHTML = `<h2 class='deepshadow'>Prematrículas cerradas.</h2>`;
-        b.textContent = "Resultados de Admisión 2023";
+        b.textContent = "Inscripción de Componentes";
         // b.disabled = true;
         document.querySelector(".pie").innerHTML = `<div class = "text alert alert-danger">
         <!-- 
