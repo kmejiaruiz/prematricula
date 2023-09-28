@@ -16,7 +16,7 @@ b.disabled = false;
 //Fecha a futuro
 // const countdownDate = new Date('11 01, 2022 8:00 AM').getTime();
 // Nueva instacia que prevee una fecha futura a cambiar el estado de la interfaz
-const countdownDate = new Date("01 16, 2023 3:39 pm").getTime();
+const countdownDate = new Date("11 01, 2023 08:00 pm").getTime();
 
 let interval = setInterval(function () {
   //Obtener fecha actual y milisegundos
