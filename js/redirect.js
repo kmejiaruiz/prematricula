@@ -1,6 +1,6 @@
 "use strict";
 
-let count = 10;
+let count = 13;
 function clock() {
   document.querySelector(".counter").innerHTML = count;
   if (count <= 0 || count === 0) {
