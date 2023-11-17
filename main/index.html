@@ -17,21 +17,25 @@
   </head>
 
   <body>
-    <div
-      class="pop-up modal col-12 col-md-6 d-flex justify-content-center align-items-center"
-      style="background-color: rgba(0, 0, 0, 0.847);"
-      id="miModal"
-    >
-      <p>
-        <span class="cerrar" onclick="cerrarModal()"> &times; </span>
-        <img
-          src="../assets/Nuevo-ingreso-2024-unan-leon-.jpg"
-          width="537px"
-          height="537px"
-          sizes="(max-width: 737px) 100vw, 737px"
-          alt=""
-        />
-      </p>
+    <div>
+      <div class="row">
+        <div
+          class="pop-up container-fluid modal col-6 col-md-6 d-flex justify-content-center align-items-center"
+          style="background-color: rgba(0, 0, 0, 0.847)"
+          id="miModal"
+        >
+          <p>
+            <span class="cerrar" onclick="cerrarModal()"> &times; </span>
+            <img
+              src="../assets/Nuevo-ingreso-2024-unan-leon-.jpg"
+              width="537px"
+              height="537px"
+              sizes="(max-width: 737px) 100vw, 737px"
+              alt=""
+            />
+          </p>
+        </div>
+      </div>
     </div>
 
     <div id="progreso">
@@ -81,9 +85,9 @@
         /* background-size: cover; */
       }
 
-.esconder{
-  display: none !important;
-}
+      .esconder {
+        display: none !important;
+      }
 
       /* .contenedor-i .auxiliar{
             display: flex;
@@ -136,6 +140,17 @@
         text-decoration: none;
         cursor: pointer;
         transition: 0.1s;
+      }
+      .pop-up img {
+        height: 400px;
+        width: 400px;
+      }
+
+      @media (max-width: 450px) {
+        .pop-up img {
+          width: 250px;
+          height: 250px;
+        }
       }
     </style>
 
@@ -244,7 +259,6 @@
       $(window).on("load", function () {
         $("#progreso").fadeOut("slow");
       });
-
 
       // Función para cerrar el modal
       function cerrarModal() {
