@@ -17,17 +17,26 @@
   </head>
 
   <body>
+    <div
+      class="pop-up modal col-12 col-md-6 d-flex justify-content-center align-items-center"
+      style="background-color: rgba(0, 0, 0, 0.847);"
+      id="miModal"
+    >
+      <p>
+        <span class="cerrar" onclick="cerrarModal()"> &times; </span>
+        <img
+          src="../assets/Nuevo-ingreso-2024-unan-leon-.jpg"
+          width="537px"
+          height="537px"
+          sizes="(max-width: 737px) 100vw, 737px"
+          alt=""
+        />
+      </p>
+    </div>
+
     <div id="progreso">
       <div class="loading">
-        <div class="image-loader">
-          <img
-            src="https://www.unanleon.edu.ni/wp-content/uploads/2023/09/ESCUDO-UNAN-LEON-negativo-2.png"
-            width="85px"
-            height="85px"
-            alt=""
-            srcset=""
-          />
-        </div>
+        <div class="image-loader"></div>
         <p class="loader-titulo">Obteniendo datos...</p>
         <span></span>
         <span></span>
@@ -72,6 +81,10 @@
         /* background-size: cover; */
       }
 
+.esconder{
+  display: none !important;
+}
+
       /* .contenedor-i .auxiliar{
             display: flex;
             
@@ -106,6 +119,23 @@
 
       .note {
         margin-top: 15px;
+      }
+
+      .cerrar {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        /* font-weight: bold; */
+        cursor: pointer;
+        transition: 0.1s;
+      }
+
+      .cerrar:hover,
+      .cerrar:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.1s;
       }
     </style>
 
@@ -214,6 +244,15 @@
       $(window).on("load", function () {
         $("#progreso").fadeOut("slow");
       });
+
+
+      // Función para cerrar el modal
+      function cerrarModal() {
+        $("#miModal").removeClass("modal");
+        $("#miModal").addClass("esconder");
+        $("#miModal").css("display", "none");
+      }
+
       /*setTimeout(() => {
         $(".pie").fadeOut("slow");
         $(".aux").addClass("mt-0");

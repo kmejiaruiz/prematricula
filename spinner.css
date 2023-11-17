@@ -15,7 +15,7 @@
 
 .loader-titulo {
   font-style: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   /* font-weight: bold; */
   color: #fff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -29,7 +29,7 @@
   height: 0.7em;
   margin: 0.19em;
   border-radius: 10px;
-  animation: loading 1s infinite alternate;
+  animation: loading 2s ease infinite alternate;
 }
 
 .loading span:nth-of-type(2) {
@@ -70,4 +70,13 @@
   100% {
     opacity: 1;
   }
+}
+
+/* Imagen Loader */
+.image-loader {
+  background-image: url(/assets/ESCUDO-UNAN-LEON-negativo-2.png);
+  height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
