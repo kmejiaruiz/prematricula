@@ -14,30 +14,13 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
-    <div>
-      <div class="row">
-        <div
-          class="pop-up container-fluid modal col-6 col-md-6 d-flex justify-content-center align-items-center"
-          style="background-color: rgba(0, 0, 0, 0.847)"
-          id="miModal"
-        >
-          <p>
-            <span class="cerrar" onclick="cerrarModal()"> &times; </span>
-            <img
-              src="../assets/Nuevo-ingreso-2024-unan-leon-.jpg"
-              width="537px"
-              height="537px"
-              sizes="(max-width: 737px) 100vw, 737px"
-              alt=""
-            />
-          </p>
-        </div>
-      </div>
-    </div>
-
     <div id="progreso">
       <div class="loading">
         <div class="image-loader"></div>
@@ -74,7 +57,6 @@
 
       .contenedor-i {
         display: flex;
-
         background-image: url("https://www.unanleon.edu.ni/wp-content/uploads/2023/09/ESCUDO-UNAN-LEON-negativo-2.png");
         width: 100%;
         background-repeat: no-repeat;
@@ -175,38 +157,7 @@
           </div>
           <!-- div contenedor de alerta -->
           <div class="pie" style="margin-top: 15px">
-            <!-- <p class="legend">
-              Las prematrículas de carreras que <strong>APLICAN</strong> prueba
-              cerraran en:
-            </p> -->
             <div class="contenedor-alerta">
-              <!-- <div
-                class="alert alert-danger w-auto alerta1"
-                style="cursor: wait"
-                role="alert"
-              >
-                <section class="container">
-                 
-                  <div
-                    class="countdown"
-                    style="
-                      display: flex;
-                      gap: 10px;
-                      align-items: center;
-                      justify-content: center;
-                    "
-                  >
-                    <span id="days"></span>
-                    <span>Dias</span>
-                    <span id="hours"></span>
-                    <span>Hrs</span>
-                    <span id="minutes"></span>
-                    <span>Min</span>
-                    <span id="seconds"></span>
-                    <span>Seg</span>
-                  </div>
-                </section>
-              </div>-->
               <p class="legend">Las prematriculas abriran en:</p>
               <div
                 class="alert alert-info w-auto"
@@ -239,7 +190,8 @@
         </div>
       </div>
     </div>
-    <nav
+
+    <!-- <nav
       class="navbar fixed-bottom bg-transparent text-md-end text-center footer d-none"
     >
       <div class="container-fluid">
@@ -249,23 +201,67 @@
           44/19 Y Siempre Mas Alla!</span
         >
       </div>
-    </nav>
+    </nav> -->
+
     <script
       src="https://code.jquery.com/jquery-3.6.2.min.js"
       integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Script del modal -->
+    <script>
+      Swal.fire({
+        // title: "imageUrl('/assets/lema-2024-unan-leon.-movil.png')!",
+        // text: "Modal with a custom image.",
+        imageUrl: "/assets/banner-gratuito.jpg",
+        imageWidth: 420,
+        imageHeight: 420,
+        showConfirmButton: false,
+        showCloseButton: true,
+        showClass: {
+          popup: `
+          animate__animated
+          animate__bounceInLeft
+          animate__faster`,
+        },
+        hideClass: {
+          popup: `
+          animate__animated
+          animate__bounceOutRight
+          animate__faster`,
+        },
+      });
+    </script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hasVisited = document.cookie.includes("visited=true");
+        if (!hasVisited) {
+          Swal.fire({
+            title: "Custom width, padding, color, background.",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(/images/trees.png)",
+            backdrop: `
+            rgba(0,0,123,0.4)
+            url("/images/nyan-cat.gif")
+            left top
+            no-repeat
+            `,
+          });
+          const expirationDate = new Date();
+          expirationDate.setDate(expirationDate.getDate() + 30);
+          document.cookie = `visited=true; expires=${expirationDate.toUTCString()}`;
+        }
+      });
+    </script> -->
+
     <script>
       $(window).on("load", function () {
         $("#progreso").fadeOut("slow");
       });
-
-      // Función para cerrar el modal
-      function cerrarModal() {
-        $("#miModal").removeClass("modal");
-        $("#miModal").addClass("esconder");
-        $("#miModal").css("display", "none");
-      }
 
       /*setTimeout(() => {
         $(".pie").fadeOut("slow");
