@@ -45,12 +45,12 @@ let intervalo = setInterval(() => {
     n.disabled = false;
     document.querySelector(
       ".pie"
-    ).innerHTML = `<div class = "text alert alert-success">
+    ).innerHTML = `<div class = "text ">
         <!-- 
         ** Haz cada cosa en la vida como si fuera lo último que hagas. **   - Marco Aurelio 
         -->
         <p class = legend style="margin:0px; text-align:center;">
-            Prematriculas 2024 Abiertas!
+            <img src='../assets/lema-2024-unan-leon.-movil.png' style="width:350px;">
         </p>
         </div>`;
     // document.querySelector(".contenedor-d").classList.add("aux");
